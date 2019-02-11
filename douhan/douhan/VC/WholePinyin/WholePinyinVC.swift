@@ -12,7 +12,7 @@ class WholePinyinVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var titles = ["1. 성모와 단운모가 만났을 때", "2. 성모와 복운모가 만났을 때", "3. 성모와 비운모가 만났을 때", "4. 성모와  i 결합운모가 만났을때", "5. 성모와 i결합 비운모가 만났을 때", "6. 성모와 u결합 운모가 만났을때", "7. 성모와 u결합 비운모가 만났을때", "8. 성모와 Ü 결합운모가 만났을 때"]
+    var titles = ["1. 성모와 단운모가 만났을 때", "2. 성모와 복운모가 만났을 때", "3. 성모와 비운모가 만났을 때", "4. 성모와  i 결합운모가 만났을때", "5. 성모와 i결합 비운모가 만났을 때", "6. 성모와 u결합 운모가 만났을때", "7. 성모와 u결합 비운모가 만났을때", "8. 성모와 ü결합운모가 만났을 때"]
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self

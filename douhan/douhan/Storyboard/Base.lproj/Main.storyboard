@@ -18,24 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIp-rq-uZ1">
-                                <rect key="frame" x="72" y="269" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="발음 연습하러 가기"/>
-                                <connections>
-                                    <segue destination="KVs-LB-AHt" kind="show" id="bEB-Hh-jBw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38t-bP-PWS">
-                                <rect key="frame" x="66" y="318" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="회화 연습하러 가기"/>
-                                <connections>
-                                    <segue destination="dCw-xk-bgT" kind="show" id="WzX-qm-tvd"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="uW9-QN-bhf">
+                                <rect key="frame" x="99" y="316" width="177" height="99"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIp-rq-uZ1">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="41"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="발음 연습하러 가기">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="KVs-LB-AHt" kind="show" id="bEB-Hh-jBw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38t-bP-PWS">
+                                        <rect key="frame" x="0.0" y="58" width="177" height="41"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="회화 연습하러 가기">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="dCw-xk-bgT" kind="show" id="WzX-qm-tvd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중국어 또 한걸음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77h-JV-VIR">
+                                <rect key="frame" x="58" y="152" width="259.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uW9-QN-bhf" firstAttribute="centerX" secondItem="dlz-Vd-3B6" secondAttribute="centerX" id="5UV-jc-qcb"/>
+                            <constraint firstItem="uW9-QN-bhf" firstAttribute="centerY" secondItem="dlz-Vd-3B6" secondAttribute="centerY" id="991-wn-AW6"/>
+                            <constraint firstItem="77h-JV-VIR" firstAttribute="centerX" secondItem="dlz-Vd-3B6" secondAttribute="centerX" id="FEN-Ww-Sw6"/>
+                            <constraint firstItem="77h-JV-VIR" firstAttribute="top" secondItem="dlz-Vd-3B6" secondAttribute="top" constant="88" id="Ngn-sL-q6L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dlz-Vd-3B6"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Eb-uv-GaN">
@@ -305,18 +328,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPA-G5-iYM" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ia"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAN-ae-MKD" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="86" y="0.0" width="85.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="iao"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0M-KF-RYD" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="171.5" y="0.0" width="86" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ie"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-Ky-71E" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="257.5" y="0.0" width="85.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="iou"/>
                                             </button>
                                         </subviews>
@@ -326,22 +353,27 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug0-og-Dp0" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="68.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ian"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV8-xb-R9s" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="68.5" y="0.0" width="68.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="in"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvz-wY-Lnn" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="137" y="0.0" width="69" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="iang"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-WQ-MSe" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="206" y="0.0" width="68.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ing"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfs-Jp-Zm3" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="274.5" y="0.0" width="68.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="iong"/>
                                             </button>
                                         </subviews>
@@ -351,18 +383,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhx-Aq-JHR" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="129"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ua"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAS-ZY-rdu" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="86" y="0.0" width="85.5" height="129"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="uo"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9a-hL-Vrw" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="171.5" y="0.0" width="86" height="129"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="uai"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRX-mz-QRT" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="257.5" y="0.0" width="85.5" height="129"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="uei"/>
                                             </button>
                                         </subviews>
@@ -372,18 +408,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pij-K4-Xtb" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="uan"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr3-S5-lLH" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="86" y="0.0" width="85.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="uen"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtT-KW-goS" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="171.5" y="0.0" width="86" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="uang"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9B-gy-2T5" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="257.5" y="0.0" width="85.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ueng"/>
                                             </button>
                                         </subviews>
@@ -393,14 +433,17 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9c-e5-Oxg" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="üe"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aML-Za-a0g" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="114.5" y="0.0" width="114" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="üan"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbd-G4-agf" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="228.5" y="0.0" width="114.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ün"/>
                                             </button>
                                         </subviews>
@@ -899,14 +942,17 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSb-64-43O" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="b"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIZ-UI-WoM" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="114.5" y="0.0" width="114" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="p"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-uj-vE8" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="228.5" y="0.0" width="114.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="m"/>
                                             </button>
                                         </subviews>
@@ -916,6 +962,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrv-DQ-l9f" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="f"/>
                                             </button>
                                         </subviews>
@@ -925,18 +972,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqm-Jv-oet" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="d"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw6-TJ-2jK" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="86" y="0.0" width="85.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="t"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1n-e0-8Ut" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="171.5" y="0.0" width="86" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="n"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngX-Ji-hcg" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="257.5" y="0.0" width="85.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="l"/>
                                             </button>
                                         </subviews>
@@ -946,14 +997,17 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNU-hT-id1" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="92"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="g"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-zu-jNG" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="114.5" y="0.0" width="114" height="92"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="k"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e77-Do-zrJ" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="228.5" y="0.0" width="114.5" height="92"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="h"/>
                                             </button>
                                         </subviews>
@@ -963,14 +1017,17 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcj-c9-U8X" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="j"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4k-0Q-aH7" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="114.5" y="0.0" width="114" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="q"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXT-0i-SY0" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="228.5" y="0.0" width="114.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="x"/>
                                             </button>
                                         </subviews>
@@ -980,18 +1037,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOX-nt-Kf9" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="zh"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foq-ip-7j7" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="86" y="0.0" width="85.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="ch"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEZ-nr-zFr" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="171.5" y="0.0" width="86" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="sh"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1I-Ta-zlz" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="257.5" y="0.0" width="85.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="r"/>
                                             </button>
                                         </subviews>
@@ -1001,14 +1062,17 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VT-rP-vIy" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="z"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULW-OZ-gct" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="114.5" y="0.0" width="114" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="c"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-Hc-v8l" customClass="HanyuBtn" customModule="douhan" customModuleProvider="target">
                                                 <rect key="frame" x="228.5" y="0.0" width="114.5" height="92.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="s"/>
                                             </button>
                                         </subviews>
@@ -1176,7 +1240,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pst-Xj-fO7">
                                         <rect key="frame" x="300" y="0.0" width="75" height="60"/>
-                                        <state key="normal" title="5성"/>
+                                        <state key="normal" title="경성"/>
                                         <connections>
                                             <action selector="changeToneAction:" destination="d6F-0g-izT" eventType="touchUpInside" id="Cvw-PW-JIt"/>
                                         </connections>
