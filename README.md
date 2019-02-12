@@ -41,3 +41,9 @@
 
 - iOS Deployment Target : **12.0**
 
+
+## [ Library ]
+
+- [YouTubePlayer](https://github.com/mukeshydv/YoutubePlayerView)
+- [AudioKit](https://github.com/AudioKit/AudioKit)
+
