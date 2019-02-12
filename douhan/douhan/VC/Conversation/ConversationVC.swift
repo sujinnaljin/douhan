@@ -39,6 +39,7 @@ extension ConversationVC : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConversationCell", for: indexPath)
         let section = indexPath.section
         cell.textLabel?.text = conversationSecs[section].conversations[indexPath.row].title
+        cell.textLabel?.font = UIFont(name: "LaoSangamMN", size: 17)!
         return cell
     }
     

@@ -21,7 +21,6 @@
 		3B479234220C4EC900AAF8E9 /* ScriptTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479233220C4EC900AAF8E9 /* ScriptTVCell.swift */; };
 		3B479236220C4F5900AAF8E9 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479235220C4F5900AAF8E9 /* DataCenter.swift */; };
 		3B479238220C4F5F00AAF8E9 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479237220C4F5F00AAF8E9 /* Conversation.swift */; };
-		3B47923A220C4F9100AAF8E9 /* ToneCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479239220C4F9100AAF8E9 /* ToneCheckVC.swift */; };
 		3B47923C220C4F9900AAF8E9 /* ToneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47923B220C4F9900AAF8E9 /* ToneVC.swift */; };
 		3B47923E220C4FA500AAF8E9 /* YunmuFisrtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47923D220C4FA500AAF8E9 /* YunmuFisrtVC.swift */; };
 		3B479240220C4FAE00AAF8E9 /* YunmuSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47923F220C4FAE00AAF8E9 /* YunmuSecondVC.swift */; };
@@ -36,7 +35,11 @@
 		3B479252220C519A00AAF8E9 /* WholePinyinSixthDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479251220C519A00AAF8E9 /* WholePinyinSixthDetailVC.swift */; };
 		3B479254220C51A300AAF8E9 /* WholePinyinSeventhDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479253220C51A300AAF8E9 /* WholePinyinSeventhDetailVC.swift */; };
 		3B479256220C51AA00AAF8E9 /* WholePinyinEighthDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479255220C51AA00AAF8E9 /* WholePinyinEighthDetailVC.swift */; };
-		3B479258220C682900AAF8E9 /* DetailSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B479257220C682900AAF8E9 /* DetailSample.swift */; };
+		3BFB55392212C198001C36AC /* NanumSquareOTFBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB55352212C18E001C36AC /* NanumSquareOTFBold.otf */; };
+		3BFB553A2212C19B001C36AC /* NanumSquareOTFExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB55382212C18F001C36AC /* NanumSquareOTFExtraBold.otf */; };
+		3BFB553B2212C19E001C36AC /* NanumSquareOTFLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB55372212C18F001C36AC /* NanumSquareOTFLight.otf */; };
+		3BFB553C2212C1A0001C36AC /* NanumSquareOTFRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB55362212C18E001C36AC /* NanumSquareOTFRegular.otf */; };
+		3BFB553E2212C444001C36AC /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB553D2212C444001C36AC /* Font.swift */; };
 		9E8F502AAAB8C804A4CE0D89 /* Pods_douhan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6C45943A7A8CB831E36BA3 /* Pods_douhan.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +62,6 @@
 		3B479233220C4EC900AAF8E9 /* ScriptTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptTVCell.swift; sourceTree = "<group>"; };
 		3B479235220C4F5900AAF8E9 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		3B479237220C4F5F00AAF8E9 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
-		3B479239220C4F9100AAF8E9 /* ToneCheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneCheckVC.swift; sourceTree = "<group>"; };
 		3B47923B220C4F9900AAF8E9 /* ToneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneVC.swift; sourceTree = "<group>"; };
 		3B47923D220C4FA500AAF8E9 /* YunmuFisrtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YunmuFisrtVC.swift; sourceTree = "<group>"; };
 		3B47923F220C4FAE00AAF8E9 /* YunmuSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YunmuSecondVC.swift; sourceTree = "<group>"; };
@@ -74,7 +76,11 @@
 		3B479251220C519A00AAF8E9 /* WholePinyinSixthDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholePinyinSixthDetailVC.swift; sourceTree = "<group>"; };
 		3B479253220C51A300AAF8E9 /* WholePinyinSeventhDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholePinyinSeventhDetailVC.swift; sourceTree = "<group>"; };
 		3B479255220C51AA00AAF8E9 /* WholePinyinEighthDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholePinyinEighthDetailVC.swift; sourceTree = "<group>"; };
-		3B479257220C682900AAF8E9 /* DetailSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSample.swift; sourceTree = "<group>"; };
+		3BFB55352212C18E001C36AC /* NanumSquareOTFBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTFBold.otf; sourceTree = "<group>"; };
+		3BFB55362212C18E001C36AC /* NanumSquareOTFRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTFRegular.otf; sourceTree = "<group>"; };
+		3BFB55372212C18F001C36AC /* NanumSquareOTFLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTFLight.otf; sourceTree = "<group>"; };
+		3BFB55382212C18F001C36AC /* NanumSquareOTFExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareOTFExtraBold.otf; sourceTree = "<group>"; };
+		3BFB553D2212C444001C36AC /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		DA6C45943A7A8CB831E36BA3 /* Pods_douhan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douhan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +117,10 @@
 		3B47920C220C4CC500AAF8E9 /* douhan */ = {
 			isa = PBXGroup;
 			children = (
+				3BFB55352212C18E001C36AC /* NanumSquareOTFBold.otf */,
+				3BFB55382212C18F001C36AC /* NanumSquareOTFExtraBold.otf */,
+				3BFB55372212C18F001C36AC /* NanumSquareOTFLight.otf */,
+				3BFB55362212C18E001C36AC /* NanumSquareOTFRegular.otf */,
 				3B479221220C4DE900AAF8E9 /* VC */,
 				3B479220220C4DE800AAF8E9 /* Util */,
 				3B47921F220C4DDE00AAF8E9 /* Storyboard */,
@@ -137,6 +147,7 @@
 				3B479223220C4E1000AAF8E9 /* Extensions.swift */,
 				3B479225220C4E1700AAF8E9 /* HanyuBtn.swift */,
 				3B479222220C4DF700AAF8E9 /* Data */,
+				3BFB553D2212C444001C36AC /* Font.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -186,7 +197,6 @@
 				3B47923F220C4FAE00AAF8E9 /* YunmuSecondVC.swift */,
 				3B479241220C4FB500AAF8E9 /* ShengmuVC.swift */,
 				3B479243220C4FBD00AAF8E9 /* ShengmuDetailVC.swift */,
-				3B479257220C682900AAF8E9 /* DetailSample.swift */,
 			);
 			path = BasicHanyu;
 			sourceTree = "<group>";
@@ -194,7 +204,6 @@
 		3B47922D220C4E6C00AAF8E9 /* Tone */ = {
 			isa = PBXGroup;
 			children = (
-				3B479239220C4F9100AAF8E9 /* ToneCheckVC.swift */,
 				3B47923B220C4F9900AAF8E9 /* ToneVC.swift */,
 			);
 			path = Tone;
@@ -288,8 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B479218220C4CC500AAF8E9 /* LaunchScreen.storyboard in Resources */,
+				3BFB553B2212C19E001C36AC /* NanumSquareOTFLight.otf in Resources */,
 				3B479215220C4CC500AAF8E9 /* Assets.xcassets in Resources */,
 				3B479213220C4CC500AAF8E9 /* Main.storyboard in Resources */,
+				3BFB553A2212C19B001C36AC /* NanumSquareOTFExtraBold.otf in Resources */,
+				3BFB553C2212C1A0001C36AC /* NanumSquareOTFRegular.otf in Resources */,
+				3BFB55392212C198001C36AC /* NanumSquareOTFBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +367,6 @@
 				3B47923C220C4F9900AAF8E9 /* ToneVC.swift in Sources */,
 				3B479256220C51AA00AAF8E9 /* WholePinyinEighthDetailVC.swift in Sources */,
 				3B479252220C519A00AAF8E9 /* WholePinyinSixthDetailVC.swift in Sources */,
-				3B47923A220C4F9100AAF8E9 /* ToneCheckVC.swift in Sources */,
 				3B479230220C4EB500AAF8E9 /* ConversationVC.swift in Sources */,
 				3B479250220C515500AAF8E9 /* WholePinyinFifthDetailVC.swift in Sources */,
 				3B479248220C510B00AAF8E9 /* WholePinyinFirstDetailVC.swift in Sources */,
@@ -373,7 +385,7 @@
 				3B479226220C4E1700AAF8E9 /* HanyuBtn.swift in Sources */,
 				3B47920E220C4CC500AAF8E9 /* AppDelegate.swift in Sources */,
 				3B47923E220C4FA500AAF8E9 /* YunmuFisrtVC.swift in Sources */,
-				3B479258220C682900AAF8E9 /* DetailSample.swift in Sources */,
+				3BFB553E2212C444001C36AC /* Font.swift in Sources */,
 				3B479234220C4EC900AAF8E9 /* ScriptTVCell.swift in Sources */,
 				3B479240220C4FAE00AAF8E9 /* YunmuSecondVC.swift in Sources */,
 			);
@@ -525,12 +537,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4XABUQ539;
 				INFOPLIST_FILE = douhan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sujinnaljin.douhan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.douhan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,12 +557,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4XABUQ539;
 				INFOPLIST_FILE = douhan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sujinnaljin.douhan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.douhan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -36,7 +36,9 @@ extension UIViewController {
             input.0.hanyu = input.1
             input.0.setTitle(input.1.hanyu, for: .normal)
             input.0.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-            input.0.titleLabel?.font =  UIFont(name: "monaco", size: 20)
+            input.0.titleLabel?.font = UIFont(name: NanumSquareOTF.NanumSquareOTFB.rawValue, size: 20)!
+            input.0.tintColor = #colorLiteral(red: 0.9067433476, green: 0.2141962349, blue: 0.2794422805, alpha: 1)
+            
         }
     }
     

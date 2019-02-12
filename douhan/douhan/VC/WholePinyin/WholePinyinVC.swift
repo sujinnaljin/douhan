@@ -32,6 +32,7 @@ extension WholePinyinVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WholePinyinTVCell", for: indexPath)
         cell.textLabel?.text = titles[indexPath.row]
+        cell.textLabel?.font = UIFont(name: NanumSquareOTF.NanumSquareOTFR.rawValue, size: 17)!
         return cell
     }
     
