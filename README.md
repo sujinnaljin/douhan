@@ -1,6 +1,4 @@
-# 또한
-
-# 중국어 또 한 걸음
+# 또한 (중국어 또 한 걸음)
 ## 청각장애인을 위한 중국어 교육
 
 ## [ About ]
@@ -31,3 +29,15 @@
 ### 개인정보 보호 정책
 
 <또한>은 별도의 개인정보를 처리하지 않습니다.
+
+
+## [ WorkFlow ]
+
+![workflow](https://github.com/sujinnaljin/douhan/blob/master/publicData/images/workflow.jpeg)
+
+## [ Develop Environment ]
+
+- Language :  **Swift 4.2**
+
+- iOS Deployment Target : **12.0**
+
