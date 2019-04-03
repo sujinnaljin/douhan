@@ -21,15 +21,11 @@ class MainVC: UIViewController {
         if activity.activityType == CSSearchableItemActionType, let info = activity.userInfo, let selectedIdentifier = info[CSSearchableItemActivityIdentifier] as? String {
             
             let mainStroyboard = UIStoryboard(name: "Main", bundle: nil)
-            if let conversationVC = mainStroyboard.instantiateViewController(withIdentifier: ConversationVC.reuseIdentifier) as? ConversationVC, let conversationDetailVC = mainStroyboard.instantiateViewController(withIdentifier:ConversationDetailVC.reuseIdentifier) as? ConversationDetailVC {
+            if let conversationVC = mainStroyboard.instantiateViewController(withIdentifier: ConversationVC.reuseIdentifier) as? ConversationVC {
                 let sec = Int(selectedIdentifier.split(separator: ":")[0].description) ?? 0
                 let row = Int(selectedIdentifier.split(separator: ":")[1].description) ?? 0
-                conversationDetailVC.conversationPath = (sec, row)
-                navigationController?.pushViewController(conversationDetailVC, animated: true)
-                let stackCount = navigationController?.viewControllers.count ?? 0
-                let addIndex = stackCount - 1
-                navigationController?.viewControllers.insert(conversationVC, at: addIndex)
-                 print("Selected Identifier: \(sec), \(row)")
+                conversationVC.conversationPath = (sec, row)
+                navigationController?.pushViewController(conversationVC, animated: true)
             }
         }
     }
@@ -37,6 +33,7 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         titleLbl.adjustsFontSizeToFitWidth = true
         practicePronounceBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         practiceConversationBtn.titleLabel?.adjustsFontSizeToFitWidth = true

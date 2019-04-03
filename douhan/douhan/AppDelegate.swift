@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         if userActivity.activityType == CSSearchableItemActionType {
-            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+            if (userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String) != nil {
                 if let navigationController = window?.rootViewController as? UINavigationController {
+                    navigationController.popToRootViewController(animated: true)
                     if let viewController = navigationController.viewControllers[0] as? MainVC {
                         viewController.restoreUserActivityState(userActivity)
                     }

@@ -10,6 +10,7 @@ import UIKit
 
 class ConversationVC: UIViewController {
     let conversationSecs = DataCenter.shared().conversations
+    var conversationPath : (sec : Int, row : Int)?
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -18,6 +19,17 @@ class ConversationVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView(frame : .zero)
+        if let conversationPath_ = conversationPath {
+            goToDetail(sec: conversationPath_.sec, row: conversationPath_.row)
+        }
+    }
+    
+    func goToDetail(sec : Int, row : Int){
+        let mainStroyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let conversationDetailVC = mainStroyboard.instantiateViewController(withIdentifier:ConversationDetailVC.reuseIdentifier) as? ConversationDetailVC {
+             conversationDetailVC.conversationPath = (sec, row)
+            self.navigationController?.pushViewController(conversationDetailVC, animated: true)
+        }
     }
 }
 
@@ -44,11 +56,7 @@ extension ConversationVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainStroyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let conversationDetailVC = mainStroyboard.instantiateViewController(withIdentifier:ConversationDetailVC.reuseIdentifier) as? ConversationDetailVC {
-            conversationDetailVC.conversationPath = (indexPath.section, indexPath.row)
-            self.navigationController?.pushViewController(conversationDetailVC, animated: true)
-        }
+       goToDetail(sec: indexPath.section, row: indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
