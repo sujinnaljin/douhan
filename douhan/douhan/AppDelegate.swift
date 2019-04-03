@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import CoreSpotlight
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        if userActivity.activityType == CSSearchableItemActionType {
+            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+                if let navigationController = window?.rootViewController as? UINavigationController {
+                    if let viewController = navigationController.viewControllers[0] as? MainVC {
+                        viewController.restoreUserActivityState(userActivity)
+                    }
+                }
+            }
+        }
 
+        return true
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch.        
         return true
     }
 

@@ -46,8 +46,7 @@ extension ConversationVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainStroyboard = UIStoryboard(name: "Main", bundle: nil)
         if let conversationDetailVC = mainStroyboard.instantiateViewController(withIdentifier:ConversationDetailVC.reuseIdentifier) as? ConversationDetailVC {
-            let selectedConversation = conversationSecs[indexPath.section].conversations[indexPath.row]
-            conversationDetailVC.conversation = selectedConversation
+            conversationDetailVC.conversationPath = (indexPath.section, indexPath.row)
             self.navigationController?.pushViewController(conversationDetailVC, animated: true)
         }
         tableView.deselectRow(at: indexPath, animated: true)
