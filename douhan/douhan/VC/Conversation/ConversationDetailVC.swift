@@ -62,17 +62,16 @@ extension ConversationDetailVC : UITableViewDelegate, UITableViewDataSource {
 extension ConversationDetailVC {
     func indexSearchableItems(){
         guard let conversation_ = conversation else {return}
-        var searchableItems = [CSSearchableItem]()
-        for (index, script) in conversation_.script.enumerated() {
-            let searchItemAttributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
-            searchItemAttributeSet.title = conversation_.title
-            searchItemAttributeSet.contentDescription = script.content
-
-            let searchableItem = CSSearchableItem(uniqueIdentifier: "\(conversationPath.sec):\(conversationPath.row):\(index)", domainIdentifier: "conversation", attributeSet: searchItemAttributeSet)
-            searchableItems.append(searchableItem)
+        var wholeScript = ""
+        for script in conversation_.script {
+           wholeScript += "\(script.content)\n"
         }
+        let searchItemAttributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
+        searchItemAttributeSet.title = conversation_.title
+        searchItemAttributeSet.contentDescription = wholeScript
         
-        CSSearchableIndex.default().indexSearchableItems(searchableItems) { (error)  in
+        let searchableItem = CSSearchableItem(uniqueIdentifier: "\(conversationPath.sec):\(conversationPath.row)", domainIdentifier: "conversation", attributeSet: searchItemAttributeSet)
+        CSSearchableIndex.default().indexSearchableItems([searchableItem]) { (error)  in
             if let error = error {
                 print("Indexing error: \(error.localizedDescription)")
             } else {
