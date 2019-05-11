@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B176D2D2286B6CA006D0818 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B176D2C2286B6CA006D0818 /* NotificationCenter.framework */; };
+		3B176D302286B6CA006D0818 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B176D2F2286B6CA006D0818 /* TodayViewController.swift */; };
+		3B176D332286B6CA006D0818 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B176D312286B6CA006D0818 /* MainInterface.storyboard */; };
+		3B176D372286B6CA006D0818 /* douhanWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B176D2B2286B6CA006D0818 /* douhanWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B3961BD2286E6770033AD0F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B176D2F2286B6CA006D0818 /* TodayViewController.swift */; };
 		3B47920E220C4CC500AAF8E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47920D220C4CC500AAF8E9 /* AppDelegate.swift */; };
 		3B479210220C4CC500AAF8E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47920F220C4CC500AAF8E9 /* ViewController.swift */; };
 		3B479213220C4CC500AAF8E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B479211220C4CC500AAF8E9 /* Main.storyboard */; };
@@ -43,9 +48,38 @@
 		9E8F502AAAB8C804A4CE0D89 /* Pods_douhan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6C45943A7A8CB831E36BA3 /* Pods_douhan.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3B176D352286B6CA006D0818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B479202220C4CC500AAF8E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B176D2A2286B6CA006D0818;
+			remoteInfo = douhanWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B176D3B2286B6CA006D0818 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3B176D372286B6CA006D0818 /* douhanWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		28F51D002FFCBC35780F6487 /* Pods-douhan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douhan.release.xcconfig"; path = "Pods/Target Support Files/Pods-douhan/Pods-douhan.release.xcconfig"; sourceTree = "<group>"; };
 		3280D30457DF13AA37261AF7 /* Pods-douhan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douhan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douhan/Pods-douhan.debug.xcconfig"; sourceTree = "<group>"; };
+		3B176D2B2286B6CA006D0818 /* douhanWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = douhanWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B176D2C2286B6CA006D0818 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3B176D2F2286B6CA006D0818 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3B176D322286B6CA006D0818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3B176D342286B6CA006D0818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B47920A220C4CC500AAF8E9 /* douhan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douhan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B47920D220C4CC500AAF8E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B47920F220C4CC500AAF8E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +119,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B176D282286B6CA006D0818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B176D2D2286B6CA006D0818 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B479207220C4CC500AAF8E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,10 +138,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B176D2E2286B6CA006D0818 /* douhanWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3B176D2F2286B6CA006D0818 /* TodayViewController.swift */,
+				3B176D312286B6CA006D0818 /* MainInterface.storyboard */,
+				3B176D342286B6CA006D0818 /* Info.plist */,
+			);
+			path = douhanWidget;
+			sourceTree = "<group>";
+		};
 		3B479201220C4CC500AAF8E9 = {
 			isa = PBXGroup;
 			children = (
 				3B47920C220C4CC500AAF8E9 /* douhan */,
+				3B176D2E2286B6CA006D0818 /* douhanWidget */,
 				3B47920B220C4CC500AAF8E9 /* Products */,
 				A90E5458D458EC253CA5647E /* Pods */,
 				50698657CB35E65F80C260F0 /* Frameworks */,
@@ -110,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				3B47920A220C4CC500AAF8E9 /* douhan.app */,
+				3B176D2B2286B6CA006D0818 /* douhanWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6C45943A7A8CB831E36BA3 /* Pods_douhan.framework */,
+				3B176D2C2286B6CA006D0818 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -239,6 +294,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B176D2A2286B6CA006D0818 /* douhanWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B176D3A2286B6CA006D0818 /* Build configuration list for PBXNativeTarget "douhanWidget" */;
+			buildPhases = (
+				3B176D272286B6CA006D0818 /* Sources */,
+				3B176D282286B6CA006D0818 /* Frameworks */,
+				3B176D292286B6CA006D0818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = douhanWidget;
+			productName = douhanWidget;
+			productReference = 3B176D2B2286B6CA006D0818 /* douhanWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3B479209220C4CC500AAF8E9 /* douhan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B47921C220C4CC500AAF8E9 /* Build configuration list for PBXNativeTarget "douhan" */;
@@ -248,10 +320,12 @@
 				3B479207220C4CC500AAF8E9 /* Frameworks */,
 				3B479208220C4CC500AAF8E9 /* Resources */,
 				6962FD3F3ECAC9A062367077 /* [CP] Embed Pods Frameworks */,
+				3B176D3B2286B6CA006D0818 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3B176D362286B6CA006D0818 /* PBXTargetDependency */,
 			);
 			name = douhan;
 			productName = douhan;
@@ -268,6 +342,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "강수진";
 				TargetAttributes = {
+					3B176D2A2286B6CA006D0818 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					3B479209220C4CC500AAF8E9 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -287,11 +364,20 @@
 			projectRoot = "";
 			targets = (
 				3B479209220C4CC500AAF8E9 /* douhan */,
+				3B176D2A2286B6CA006D0818 /* douhanWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B176D292286B6CA006D0818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B176D332286B6CA006D0818 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B479208220C4CC500AAF8E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,7 +403,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-douhan/Pods-douhan-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-douhan/Pods-douhan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -328,7 +414,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douhan/Pods-douhan-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-douhan/Pods-douhan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ADE48FFAE6408C907D68E466 /* [CP] Check Pods Manifest.lock */ = {
@@ -356,6 +442,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B176D272286B6CA006D0818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B176D302286B6CA006D0818 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3B479206220C4CC500AAF8E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,6 +474,7 @@
 				3B479254220C51A300AAF8E9 /* WholePinyinSeventhDetailVC.swift in Sources */,
 				3B479224220C4E1000AAF8E9 /* Extensions.swift in Sources */,
 				3B479242220C4FB500AAF8E9 /* ShengmuVC.swift in Sources */,
+				3B3961BD2286E6770033AD0F /* TodayViewController.swift in Sources */,
 				3B479226220C4E1700AAF8E9 /* HanyuBtn.swift in Sources */,
 				3B47920E220C4CC500AAF8E9 /* AppDelegate.swift in Sources */,
 				3B47923E220C4FA500AAF8E9 /* YunmuFisrtVC.swift in Sources */,
@@ -391,7 +486,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3B176D362286B6CA006D0818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B176D2A2286B6CA006D0818 /* douhanWidget */;
+			targetProxy = 3B176D352286B6CA006D0818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		3B176D312286B6CA006D0818 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B176D322286B6CA006D0818 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		3B479211220C4CC500AAF8E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,6 +522,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3B176D382286B6CA006D0818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4XABUQ539;
+				INFOPLIST_FILE = douhanWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.douhan.douhanWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B176D392286B6CA006D0818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4XABUQ539;
+				INFOPLIST_FILE = douhanWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ccp.douhan.douhanWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3B47921A220C4CC500AAF8E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3280D30457DF13AA37261AF7 /* Pods-douhan.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4XABUQ539;
@@ -551,6 +701,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28F51D002FFCBC35780F6487 /* Pods-douhan.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4XABUQ539;
@@ -570,6 +721,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B176D3A2286B6CA006D0818 /* Build configuration list for PBXNativeTarget "douhanWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B176D382286B6CA006D0818 /* Debug */,
+				3B176D392286B6CA006D0818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3B479205220C4CC500AAF8E9 /* Build configuration list for PBXProject "douhan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

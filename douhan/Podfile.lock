@@ -1,9 +1,9 @@
 PODS:
-  - AudioKit (4.5.6):
-    - AudioKit/Core (= 4.5.6)
-    - AudioKit/UI (= 4.5.6)
-  - AudioKit/Core (4.5.6)
-  - AudioKit/UI (4.5.6):
+  - AudioKit (4.7.1):
+    - AudioKit/Core (= 4.7.1)
+    - AudioKit/UI (= 4.7.1)
+  - AudioKit/Core (4.7.1)
+  - AudioKit/UI (4.7.1):
     - AudioKit/Core
   - YouTubePlayer (0.4.0)
 
@@ -17,9 +17,9 @@ SPEC REPOS:
     - YouTubePlayer
 
 SPEC CHECKSUMS:
-  AudioKit: 84f5a444902a74ac32cfe8488e72782792ff2edc
+  AudioKit: fb42378fbe950033462b47efe3643c108698ba03
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
 PODFILE CHECKSUM: 247c8efbdf18b3b4b390a6c63eeaec2fd7d1a7b5
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
